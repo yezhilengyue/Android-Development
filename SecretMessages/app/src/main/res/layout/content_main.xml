@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="364dp"
+        android:layout_height="494dp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="9dp">
+
+        <EditText
+            android:id="@+id/txtIn"
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:text="Secret messages \n are so cool, \n aren't they?"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <EditText
+            android:id="@+id/txtOut"
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="69dp"
+            android:ems="10"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="4"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="121dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:max="26"
+            android:progress="26"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="234dp"
+            tools:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Yuwei's Secret Message App"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.087" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/txtKey"
+            android:text="Key:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <EditText
+            android:id="@+id/txtKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:width="40dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:text="13" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txtKey"
+            android:text="Encode/Decode" />
+
+        <Button
+            android:id="@+id/btnMoveUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="95dp"
+            android:text="Move Up+" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
